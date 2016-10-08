@@ -8,8 +8,8 @@ var chalk = require('chalk');
 program
     .arguments('<minutes>')
     .option('-b, --break', 'Want a 5 minute break after timer is done? (add flag if you want a break)')
+    .option('-n, --notification', 'Show notification (add flag if you want a notification)')    
     .option('-c, --color <color>', 'Color of progress bar')
-    .option('-n, --notification', 'Show notification (add flag if you want a notification)')
     .action(function(minutes){
         var pause = program.break || false 
         var color = program.color || "green"

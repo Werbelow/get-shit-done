@@ -1,4 +1,4 @@
-# Get Shit Done Timer - WIP
+# Get Shit Done Timer
 
 A simple command line timer for helping you get shit done 
 
@@ -27,8 +27,9 @@ Starts a 15 minute timer with a break afterwards, a notification when your time 
 
     -h, --help           output usage information
     -b, --break          Want a 5 minute break after timer is done? (add flag if you want a break)
-    -c, --color <color>  Color of progress bar
     -n, --notification   Show notification (add flag if you want a notification)
+    -c, --color <color>  Color of progress bar
+    
 ```
 
 ##### License
