@@ -2,6 +2,8 @@
 
 A simple command line timer for helping you get shit done 
 
+![Get Shit Done](./screenshot.png)
+
 #### Install
 ```
 npm install -g gsd

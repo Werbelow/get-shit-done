@@ -18,7 +18,6 @@ program
     })
     .parse(process.argv);
 
-
 function handleFocus(minutes, pause, color, notification) {
     var total = minutes * 60, count = 0;
     console.log(chalk.green("You have " + minutes + " minutes to get shit done! GO!"));

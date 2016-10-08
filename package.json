@@ -20,8 +20,16 @@
     "node-notifier": "^4.5.0",
     "ts-progress": "0.0.4"
   },
-  "author": "Travis Werbelow",
-  "license": "ISC",
+  "author": {
+    "name": "Travis Werbelow",
+    "url": "www.dvlpr.io"
+  },
+  "homepage": "https://github.com/Werbelow/get-shit-done",
+  "repository" :{
+    "type" : "git",
+     "url" : "https://github.com/Werbelow/get-shit-done"
+  },
+  "license": "MIT",
   "bin": {
     "gsd": "./gsd.js"
   }
