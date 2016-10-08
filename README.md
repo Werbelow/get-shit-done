@@ -15,6 +15,9 @@ npm install -g gsd
 gsd -b -n -c blue 15
 ```
 
+Starts a 15 minute timer with a break afterwards, a notification when your time is up, and the progress bar color of blue. 
+
+
 #### Options 
 
 ```
@@ -27,8 +30,6 @@ gsd -b -n -c blue 15
     -c, --color <color>  Color of progress bar
     -n, --notification   Show notification (add flag if you want a notification)
 ```
-
-Starts a 15 minute timer with a break afterwards, a notification when your time is up, and the progress bar color of blue. 
 
 ##### License
 
