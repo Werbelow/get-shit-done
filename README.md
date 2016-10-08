@@ -1,4 +1,4 @@
-# Get Shit Done Timer
+# Get Shit Done Timer - WIP
 
 A simple command line timer for helping you get shit done 
 

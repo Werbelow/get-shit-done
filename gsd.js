@@ -11,7 +11,6 @@ program
     .option('-c, --color <color>', 'Color of progress bar')
     .option('-n, --notification', 'Show notification (add flag if you want a notification)')
     .action(function(minutes){
-        console.log("BREAK %s, NOTIFICATION %s", program.break, program.notification);
         var pause = program.break || false 
         var color = program.color || "green"
         var notification = program.notification || false 
@@ -22,7 +21,6 @@ program
 
 function handleFocus(minutes, pause, color, notification) {
     var total = minutes * 60, count = 0;
-    // console.log("MINUTES %s, BREAK %s, COLOR %s, NOTIFICATION %s", minutes, pause, color, notification);
     console.log(chalk.green("You have " + minutes + " minutes to get shit done! GO!"));
 
     //there is probably a better way to go about this...
