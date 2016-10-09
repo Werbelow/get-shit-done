@@ -8,11 +8,18 @@ A simple command line timer for helping you get shit done
 
 #### Install
 ```
-npm install -g gsd
+npm install -g get-shit-done
 ```
 
 #### Usage
 
+Simple: 
+```
+gsd 15
+```
+Starts a 15 minutes timer without a break or notification, and the default progress bar color of green 
+
+With options:
 ```
 gsd -b -n -c blue 15
 ```
