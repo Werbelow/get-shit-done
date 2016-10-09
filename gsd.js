@@ -9,7 +9,7 @@ program
     .arguments('<minutes>')
     .option('-b, --break', 'Want a 5 minute break after timer is done? (add flag if you want a break)')
     .option('-n, --notification', 'Show notification (add flag if you want a notification)')    
-    .option('-c, --color <color>', 'Color of progress bar')
+    .option('-c, --color <color>', 'Color of progress bar - red, yellow, green, blue, cyan, magenta or black')
     .action(function(minutes){
         var pause = program.break || false 
         var color = program.color || "green"
@@ -22,34 +22,9 @@ function handleFocus(minutes, pause, color, notification) {
     var total = minutes * 60, count = 0;
     console.log(chalk.green("You have " + minutes + " minutes to get shit done! GO!"));
 
-    //there is probably a better way to go about this...
-    var bar;
-    switch (color) {
-        case "red":
-            bar = 'Getting Shit Done...: {bar.white.red.20}'
-            break;
-        case "yellow":
-            bar = 'Getting Shit Done...: {bar.white.yellow.20}'
-            break;
-        case "green":
-            bar = 'Getting Shit Done...: {bar.white.green.20}'
-            break;
-        case "blue":
-            bar = 'Getting Shit Done...: {bar.white.blue.20}'
-            break;
-        case "cyan":
-            bar = 'Getting Shit Done...: {bar.white.cyan.20}'
-            break;
-        case "magenta":
-            bar = 'Getting Shit Done...: {bar.white.magenta.20}'
-            break;
-        case "black":
-            bar = 'Getting Shit Done...: {bar.white.black.20}'
-            break;
-        default:
-            bar = 'Getting Shit Done...: {bar.white.green.20}'        
-            break;
-    }
+    var colors = ["red", "yellow", "green", "blue", "cyan", "magenta", "black"]
+    var bar = colors.indexOf(color) > -1 ? 'Getting Shit Done...: {bar.white.'+ [color] + '.20}' : 'Getting Shit Done...: {bar.white.green.20}'
+
     var progress = new Progress(total, bar);
     var iv = setInterval(function () {
     count++;
